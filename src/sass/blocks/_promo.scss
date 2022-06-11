@@ -51,19 +51,4 @@
             }
         }
     }
-    .burger {
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        cursor: pointer;
-        span {
-            margin-bottom: 7px;
-            display: block;
-            width: 33px;
-            height: 3px;
-            background-color: $circle;
-            opacity: 0.8;
-            border-radius: 3px;
-        }
-    }
 }
