@@ -1,0 +1,12 @@
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    color: $text-color;
+    margin-bottom: 0;
+    &_fr48 {
+        font-size: 48px;
+    }
+    &_fz16 {
+        font-size: 16px;
+    }
+}
