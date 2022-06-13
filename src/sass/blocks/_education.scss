@@ -1,0 +1,106 @@
+.education {
+    min-height: 100vh;
+    padding-top: 120px;
+    .title_fz16 {
+        position: relative;
+        text-align: center;
+        @include circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .title_fz36 {
+        text-align: center; 
+    }
+    &__divider {
+        width: 60px;
+        height: 3px;
+        background-color: $circle;
+        border-radius: 3px;
+        margin: 25px auto 0 auto;
+    }
+    &__wrapper {
+        padding: 60px 70px 0 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__col-title {
+        position: relative;
+        padding-left: 35px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -7px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background: $circle;
+
+        }
+    }
+    ul {
+        list-style-type: none;
+        margin-bottom: 0;
+        li {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: calc(100% + 8px);
+                top: -8px;
+                background: $text-color;
+                left: 0;
+            }
+            .item {
+                &__head {
+                    padding-left: 60px;
+                    padding-top: 45px;
+                    display: flex;
+                    align-items: flex-end;
+                }
+                &__icon {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    position: relative;
+                    padding-right: 18px;
+                    @include circle;
+                    &:before {
+                        top: -14px;
+                        left: -17px;
+                    }
+                }
+                &__loc {
+                    position: relative;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        width: 43px;
+                        top: -2px;
+                        left: -102px;
+                        background: $text-color;
+                    }
+                }
+                &__loc, &__body  {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: $text-color;
+                }
+                &__body {
+                    width: 375px;
+                    padding: 15px 0 0 43px;
+
+                }
+            }
+        }
+    }
+}

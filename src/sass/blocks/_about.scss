@@ -1,28 +1,34 @@
 .about {
     min-height: 100vh;
     position: relative;
-    padding: 240px 0;
+    padding-top: 120px;
+
     &__photo {
         display: block;
         width: 400px;
         height: 500px;
         margin-right: 70px;
     }
+
     &__wrapper {
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
+        margin-top: 100px;
     }
+
     &__descr {
         width: 570px;
     }
+
     &__divider {
         width: 60px;
         height: 3px;
         background-color: $circle;
         border-radius: 3px;
-        margin-top: 3px; 
+        margin-top: 3px;
     }
+
     &__p {
         padding-top: 20px;
         font-weight: 500;
@@ -30,66 +36,61 @@
         line-height: 21px;
         margin-bottom: 0;
     }
+
     &__skills {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 40px;
     }
+
     &__skill {
         display: flex;
         justify-content: space-between;
         width: 260px;
+
         &:last-child {
             margin-top: 20px;
         }
     }
+
     &__skill-text {
         width: 200px;
     }
+
     &__skill-title {
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
         color: $text-color;
     }
+
     &__skill-descr {
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
         color: $text-color;
     }
+
     &__skill-img {
         position: relative;
         margin-top: 15px;
         margin-left: 15px;
+        @include circle;
         &:before {
-            content: '';
-            position: absolute;
-            z-index: -1;
             top: -15px;
             left: -15px;
-            width: 36px;
-            height: 36px;
-            background: #f9ce69;
-            border-radius:  30% 70% 35% 65% / 40% 30% 70% 60% ;
         }
     }
+
     .title {
         &_fz16 {
             position: relative;
             @include circle;
-            /* &:before {
-                content: '';
-                position: absolute;
-                z-index: -1;
+            &:before {
                 top: -10px;
                 left: -10px;
-                width: 36px;
-                height: 36px;
-                background: #f9ce69;
-                border-radius:  30% 70% 35% 65% / 40% 30% 70% 60% ;
-            } */
+            }
         }
     }
 

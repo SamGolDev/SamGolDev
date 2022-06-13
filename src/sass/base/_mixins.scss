@@ -2,9 +2,9 @@
     &:before {
         content: '';
         position: absolute;
+        /* top: 0;
+        left: 0; */
         z-index: -1;
-        top: -10px;
-        left: -10px;
         width: 36px;
         height: 36px;
         background: #f9ce69;

@@ -1,0 +1,103 @@
+.skills {
+    min-height: 100vh;
+    padding-top: 120px;
+    .title_fz16 {
+        position: relative;
+        text-align: center;
+        @include circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .title_fz36 {
+        text-align: center; 
+    }
+    &__divider {
+        width: 60px;
+        height: 3px;
+        background-color: $circle;
+        border-radius: 3px;
+        margin: 25px auto 60px auto;
+    }
+    &__wrapper {
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        height: 270px;
+        width: 270px;
+        padding: 30px 25px 25px 25px;
+        border: 1px solid /* #e34c26 */ $text-color;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       /*  &:nth-child(2) {
+            border: 1px solid #2965f1;
+        }
+        &:nth-child(3) {
+            border: 1px solid #f7df1e;
+        } */
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: $text-color;
+        padding-top: 20px;
+    }
+    &__text {
+        padding-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: $text-color;
+        margin-bottom: 0;
+    }
+
+    &__ratings {
+        padding-top: 120px;
+        display: grid;
+                       /*  2кол, мин 70 ширина             3строки длина 350 */
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 40px;
+        &-item {
+            display: grid;
+                               /*  ширина строк          ширина кол 2шт */
+            grid-template: minmax(21px, auto) 20px / 200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
+            .title_fz14 {
+                position: relative;
+                @include circle;
+                &:before {
+                    top: -8px;
+                    left: -5px;
+                }
+            }
+        }
+        &-counter {
+            font-weight: 500;
+            font-size: 14px;
+            color: $text-color;
+        }
+        &-line {
+            width: 350px;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            grid-column: 1 / 3;
+            span {
+                display: block;
+                height: 100%;
+                background-color: $circle;
+                border-radius: 4px;
+            }
+        }
+    }
+}

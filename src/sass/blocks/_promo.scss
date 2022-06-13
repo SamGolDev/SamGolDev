@@ -8,6 +8,10 @@
     &__title {
         position: relative;
         @include circle;
+        &:before {
+            top: -10px;
+            left: -10px;
+        }
     }
     &__btns {
         margin-top: 25px;
