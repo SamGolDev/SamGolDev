@@ -4,6 +4,8 @@
     }
 }
 
+
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
@@ -19,6 +21,30 @@
     }
     .about__skill-text {
         width: 210px;
+    }
+    .education__wrapper {
+        grid-template-columns: repeat(2,380px);
+    }
+    .skills__ratings {
+        grid-template: repeat(2,minmax(70px,auto))/repeat(3,290px);
+    }
+    .skills__ratings-line {
+        width: 100%;
+    }
+    .portfolio__wrapper {
+        grid-template-columns: repeat(auto-fit, 280px);
+        grid-auto-rows: 280px;
+        justify-content: center;
+        .horizontal, .vertical {
+            grid-row: unset;
+            grid-column: unset;
+        }
+    }
+    .contacts__form {
+        grid-template: 44px 190px 45px/repeat(2,230px);
+    }
+    .contacts__wrapper {
+        grid-template-columns: 400px 540px;
     }
 }
 
@@ -54,7 +80,36 @@
     .about__skill:last-child {
         margin-top: 0;
     }
+
+    .education__wrapper {
+        padding: 60px 0 0 0;
+        column-gap: 10px;
+        grid-template-columns: repeat(2,355px);
+    }
+    .education ul li .item__body {
+        width: 300px;
+    }
+    .skills__divider {
+        margin: 25px auto 30px auto;
+    }
+    .skills__wrapper {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .skills__item {
+        margin-top: 30px;
+    }
+    .skills__ratings {
+        grid-template: repeat(3,minmax(70px,auto))/repeat(2,290px);
+        justify-content: center;
+        column-gap: 80px;
+    }
+    .contacts__photo {
+        display: none;
+    }
 }
+
+
 
 @media (max-width: 768px) {
     .container {
@@ -84,7 +139,46 @@
             object-fit: contain;
         }
     }
+    .education__wrapper {
+        column-gap: 10px;
+        grid-template-columns: repeat(2,260px);
+    }
+    .education ul li .item__body {
+        width: 225px;
+        font-size: 12px;
+    }
+    .title_fz36 {
+        font-size: 27px;
+    }
+    .education {
+        padding-top: 80px;
+    }
+    .skills {
+        padding-top: 60px;
+    }
+    .skills__item {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .portfolio {
+        padding-top: 40px;
+    }
+    .portfolio__divider {
+        margin: 20px auto 30px auto;
+    }
+    .portfolio__wrapper {
+        gap: 10px;
+    }
+    .contacts {
+        padding: 40px 0;
+    }
+    .contacts__wrapper {
+        padding: 0;
+    }
 }
+
+
 
 @media (max-width: 576px) {
     .container {
@@ -167,5 +261,82 @@
         &__descr {
             width: 100%;
         }
+    }
+    .education {
+        padding-top: 40px;
+    }
+    .education__wrapper {
+        grid-template-columns: 290px;
+        align-items: center;
+        padding-top: 0;
+    }
+    .education__col {
+        padding-top: 40px;
+    }
+    .education__col-title {
+        position: relative;
+        padding-left: 20px;
+    }
+    .title_fz20 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .skills {
+        padding-top: 40px;
+    }
+    .skills__divider {
+        margin: 15px auto 0 auto;
+    }
+    .skills__item {
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 20px;
+        }
+    }
+    .skills .title_fz36 {
+        padding-top: 20px;
+        font-size: 24px;
+    }
+    .skills__ratings {
+        grid-template: repeat(6,minmax(70px,auto)) / 290px;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .skills__ratings-item {
+        row-gap: 40px;
+    }
+    .contacts__form {   
+        grid-template: 45px 45px 143px/ 300px;
+        row-gap: 20px;
+    }
+    .contacts__input, .contacts__textarea, .contacts__triggers {
+        grid-column: 1 / 2;
+    }
+    .contacts__triggers {
+        grid-template-columns: 220px;
+        grid-template-rows: repeat(2, 45px);
+        row-gap: 20px;
+        justify-content: center;
+        .btn {
+            grid-row: 2 / 3;
+        }
+    }
+    .contacts__policy {
+        text-align: center;
+        line-height: 12px;
+        span {
+            font-size: 10px;
+        }
+    }
+    .contacts__descr .title_fz36 {
+        font-size: 24px;
+        margin-top: 0;
+    }
+    .contacts__social a {
+        padding-right: 10px;
+    }
+    .contacts__wrapper {
+        grid-template-columns: 300px;
+        justify-content: center;
     }
 }
