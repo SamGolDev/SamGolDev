@@ -1,0 +1,171 @@
+@media (max-width: 1320px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about__wrapper {
+        justify-content: space-between;
+    }
+    .about__skills {
+        justify-content: space-evenly;
+    }
+    .about__skill {
+        
+    }
+    .about__skill-text {
+        width: 210px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .about__wrapper {
+        align-items: center;
+    }
+    .about__photo {
+        width: 100%;
+        img {
+            object-fit: cover;
+        }
+    }
+    .title_fz36 {
+        font-size: 30px;
+    }
+    .about__p {
+        padding-top: 10px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+    .about__skills {
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .about__skill:last-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .about {
+        padding: 0;
+    }
+    .about__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about__skills {
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .about__skill {
+        padding-top: 20px;
+    }
+    .about__photo {
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 300px;
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 320px;
+        padding: 0 15px;
+    }
+    .burger {
+        top: 20px;
+        right: 20px;
+    }
+    .menu__block {
+        max-width: 100%;
+        padding-left: 35px;
+    }
+    .promo {
+        &__wrapper {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .title_fz48 {
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 39px;
+        }
+        &__btns {
+            margin-top: 32px;
+            justify-content: space-around;
+        }
+        &__link {
+            margin: 0 auto;
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+    .about {
+        &__wrapper {
+           margin: 0;
+            flex-direction: column;
+        }
+        &__photo {
+            height: 300px;
+            img {
+                height: 100%;
+            }
+        }
+        .title_fz16 {
+            margin-top: 40px;
+            text-align: center;
+            &:before {
+                left: 43%;
+                top: -5px;
+            }
+        }
+        .title_fz36 {
+            font-size: 24px;
+            line-height: 20px;
+            text-align: left;
+            margin-top: 20px;
+        }
+        &__divider {
+            margin: 15px 0;
+        }
+        &__skill {
+            padding-top: 25px;
+            width: 270px;
+        }
+        &__skills {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 0;
+        }
+        &__p {
+            margin: 0 auto;
+            width: 300px;
+            font-size: 11px;
+        }
+        &__descr {
+            width: 100%;
+        }
+    }
+}

@@ -4,10 +4,14 @@
     padding-top: 120px;
 
     &__photo {
-        display: block;
-        width: 400px;
-        height: 500px;
         margin-right: 70px;
+        height: 500px;
+        width: 400px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &__wrapper {

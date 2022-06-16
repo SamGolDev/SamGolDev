@@ -1,0 +1,441 @@
+header
+	position: relative
+	height: 50px
+
+nav
+	position: fixed
+	width: 100%
+	height: 50px
+	background: #212121
+	z-index: 2
+
+.hamburger
+	display: none       //чтобы бургер был на опр значениях экрана
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0px
+	list-style-type: none
+
+	&_link
+		font-weight: 300
+		font-size: 15px
+		color: #FFFFFF
+		text-decoration: none
+		&:hover
+			color: $main-color
+
+	&_item
+		border-right: 2px dotted black
+		padding-right: 38px
+		&:last-child         //убрали разделитель в конце
+			border-right: none
+
+.subheader
+	position: absolute
+	top: 50px
+	width: 100%
+	height: 87px
+	background: rgba(0, 0, 0, 0.6)
+
+	&_logo
+		display: block
+		max-width: 100%
+		margin-top: 19px
+
+	&_official
+		margin-top: 6px
+		font-weight: 100
+		font-size: 13px
+		color: #FFFFFF
+		opacity: 0.6
+
+	&_call
+		margin-top: 19px
+		font-weight: 300
+		font-size: 12px
+		color: #FFFFFF
+		text-align: center
+
+	&_phone
+		margin-top: 11px
+		margin-left: 10px
+		font-weight: 400
+		font-size: 22px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+		text-decoration: none
+		&:hover
+			color: $main-color
+
+	&_btn
+		margin-top: 21px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+		border: none
+		background-image: linear-gradient(to top, $main-color 0%, #4CE2FF 100%)
+		border-radius: 4px
+		font-weight: 400
+		font-size: 14px
+		text-align: center
+		text-transform: uppercase
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		color: white
+		+btn_hover
+		
+
+
+
+.promo
+	min-height: 800px
+	background: url('../img/uber_bg.jpg') center (center / cover) no-repeat
+	padding: 150px 0 135px 0
+
+	&_header
+		margin: 0
+		font-weight: 700
+		font-size: 60px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+		line-height: 60px
+
+	&_subheader
+		margin: 0
+		margin-top: 20px
+		font-weight: 700
+		font-size: 36px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+		line-height: 36px
+
+	&_descr
+		margin-top: 23px
+		font-weight: 400
+		font-size: 18px
+		line-height: 24px
+		text-align: center
+		color: #FFFFFF
+
+	&_btn
+		display: block
+		margin: 110px auto 0 auto
+		width: 172px
+		height: 46px
+		box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+		border: none
+		background-image: linear-gradient(to top, $main-color 0%, #4CE2FF 100%)
+		border-radius: 4px
+		font-weight: 400
+		font-size: 14px
+		text-align: center
+		text-transform: uppercase
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		color: white
+		+btn_hover
+
+.reasons
+	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 25px
+		width: 113px
+		height: 113px
+		background: $main-color
+		border-radius: 100%
+	&_descr
+		width: 343px
+	&_subtitle
+		font-weight: 400
+		font-size: 17px
+		line-height: 21px
+		color: $main-color
+	&_text
+		font-weight: 300
+		font-size: 15px
+		line-height: 21px
+		color: #202020
+
+.label
+	margin: 0 auto
+	height: 24px
+	width: 112px
+	padding: 5px 12px
+	background-color: #000000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 400
+	text-transform: uppercase
+	text-align: center
+	&_white
+		background-color: white
+		color: black
+	&_world
+		background-color: white
+		color: black
+		width: 79px
+		height: 27px
+		
+
+
+
+.title
+	margin-top: 30px
+	margin-bottom: 0
+	font-weight: 700
+	font-size: 38px
+	text-align: center
+	text-transform: uppercase
+	color: #222222
+	&_white
+		color: white
+
+.subtitle
+	font-weight: 400
+	font-size: 17px
+	text-align: center
+	color: #222222
+	text-align: center 
+	&_white
+		color: white
+		
+	
+
+.mobile	
+	min-height: 864px
+	padding: 48px 0 80px 0 
+	background: url('../img/mobile_bg.jpg') center center/cover no-repeat
+	.row
+		margin-top: 31px   // айтемы в строке, в ней можно задать мт для отступа
+	&_item	
+		position: relative
+		width: 320px	
+		height: 280px	
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 90px   //текст в айтеме, для него пд чтобы сдвинуть к центру
+		&_1
+			background: url('../img/mobile_screen_1.jpg') center center/cover no-repeat
+		&_2
+			background: url('../img/mobile_screen_2.jpg') center center/cover no-repeat
+		&_3
+			background: url('../img/mobile_screen_3.jpg') center center/cover no-repeat
+		&_4
+			background: url('../img/mobile_screen_4.jpg') center center/cover no-repeat
+		&_5
+			background: url('../img/mobile_screen_5.jpg') center center/cover no-repeat
+		&_6
+			background: url('../img/mobile_screen_6.jpg') center center/cover no-repeat
+		&_subtitle
+			text-align: center
+			font-weight: 400
+			font-size: 24px
+			text-transform: uppercase
+			color: #FFFFFF
+		&_plus
+			display: flex                //флексы для того чтобы плюс внутри был в центре черного круга
+			justify-content: center
+			align-items: center
+			position: absolute              //чтобы плюс сместить вниз, родителю релатив не забываем
+			width: 26px
+			height: 26px
+			background: #000000
+			border-radius: 100%
+			margin: 0 auto
+			bottom: 34px
+			right: 50%
+			transform: translateX(+50%)
+			cursor: pointer
+			&:before                   //горизонтальная полоска    
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+			&:after                 //вертикальная полоска
+				content: ''	
+				position: absolute
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $main-color
+			&:hover 
+				&:before, &:after
+					background-color: $second-color
+					transition: 0.5s all
+
+				
+				
+
+.choice
+	position: relative
+	height: 890px
+	padding: 54px 0 138px 0
+	background: url('../img/car_bg.jpg') center center/cover no-repeat
+	&_img
+		display: block
+		margin: 54px auto
+		margin-bottom: 0
+	&__descr
+	font-weight: 300
+	font-size: 17px
+	text-align: center
+	color: #222222
+
+.black
+	top: 0
+	left: 0
+	height: 502px	
+	background-color: #070716
+	width: 100%
+	position: absolute
+	z-index: -1
+
+.require     
+	padding: 66px 0 87px 0
+	&_block
+		margin: 33px 0 
+		&_nmb        //добавили псевдокласс, пушо у 3 и 4 блока нужно убрать margin
+			margin-bottom: 0
+	&_title	
+		font-weight: 400
+		font-size: 22px
+		color: #1CA8C3
+		&_red
+			color: #FF5656
+	&_list                   //именно список ul 
+		padding-left: 50px
+		list-style-type: none 
+		margin-top: 22px
+		li
+			position: relative
+			margin-bottom: 10px
+			font-weight: 300
+			line-height: 24px
+			font-size: 17px
+			color: #222222
+			&:before
+				content: ''
+				display: block   //флексы не будут работать для before, поэтому делаем строчно-блочный элемент
+				position: absolute
+				left: -32px    //отступ от иконки и ширина самой иконки 11+21px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url(../icons/check_blue.svg) center center/cover no-repeat	
+		
+
+					
+	&_descr
+		margin-top: 25px
+		font-weight: 300
+		font-size: 17px
+		color: #1CA8C3
+	.red           //все также как и с синими иконками
+		.require_title
+			color: $second-color
+		.require_list
+			li
+				&:before
+					background: url(../icons/check_red.svg) center center/cover no-repeat
+
+.world
+	position: relative
+	height: 720px	
+	padding: 46px 0 50px 0	
+	background: url('../img/world_bg.jpg')	center center/cover no-repeat
+	&_link
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
+		font-weight: 400
+		text-transform: uppercase
+		color: #1FBAD6
+		text-align: center
+		text-decoration: none
+		&:hover
+			color: #fff
+
+footer
+	padding: 12px 21px 40px 23px 
+	a
+		text-decoration: none 
+
+.footer	
+	&_divider
+		width: 301px
+		height: 7px
+		background: #1FBAD6
+		border-radius: 3px
+		margin: 0 auto
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px	
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item                     
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
+		margin: 0 auto		
+		&_main                    
+			display: flex
+			justify-content: space-between
+			/* padding: 0 10px */
+			a
+				font-weight: 300
+				font-size: 15px
+				text-transform: uppercase
+				color: #070716
+		&_sub
+			display: flex
+			justify-content: space-between
+			font-weight: 300
+			margin-top: 10px
+			a
+				font-size: 11px
+				text-transform: uppercase
+				color: #999999
+		&_lang
+			display: block
+			font-weight: 400
+			font-size: 11px
+			text-align: center
+			text-transform: uppercase
+			color: #1FBAD6
+			margin: 15px 0 0 0 
+			&:hover
+				color: #999999
+.xs-visible
+	display: none

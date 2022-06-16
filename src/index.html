@@ -64,9 +64,8 @@
                 <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
                 <li class="menu__link"><a href="#education">МОЙ ОПЫТ</a></li>
                 <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
-                <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-                <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a><li>
+                <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
             </nav>
             <div class="menu__social">
                 <a target="_blank" href="https://github.com/SamGolDev" class="sidepanel__link"><i class="fa-brands fa-github"></i></a>
@@ -87,7 +86,7 @@
                 <div class="title title_fz16 promo__title">Меня зовут Сергей</div>
                 <h2 class="title title_fz48">Я web-разработчик <br> из города Казань</h2>
                 <div class="promo__btns">
-                    <a href="#" class="promo__link">Портфолио</a>
+                    <a href="#portfolio" class="promo__link">Портфолио</a>
                     <a href="#about" class="promo__link">Про меня</a>
                     </div>
                 </div>
@@ -98,15 +97,19 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
-                <img src="img/main_photo.jpg" alt="photo" class="about__photo">
+                <div class="about__photo">
+                    <img src="img/main_photo.jpg" alt="photo">
+                </div>
+                
                 <div class="about__descr">
                     <div class="about__text">
                         <div class="title title_fz16">Про меня</div>
                         <h2 class="title title_fz36">Меня зовут Сергей</h2>
                         <div class="about__divider"></div>
-                        <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <div class="about__p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        </div>
                     </div>
-
 
                     <div class="about__skills">
                         <div class="about__skill">
@@ -133,11 +136,11 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
-    <section class="education" id="education">
+   <!--  <section class="education" id="education">
         <div class="container">
             <div class="title title_fz16">Опыт</div>
             <h2 class="title title_fz36">Чем я буду полезен</h2>
@@ -147,7 +150,7 @@
                     <h3 class="title title_fz20 education__col-title">Образование</h3> 
                     <ul>
                         <li>
-                                          <!-- col-1 item-1 -->
+                                      
                             <div class="item">
                                 <div class="item__head">
                                     <div class="item__icon"><img src="icons/experience/university.svg" alt="university">
@@ -161,7 +164,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
                                 </div>
                             </div>
-                                    <!-- col-2 item-2 -->
+                                   
                             <div class="item">
                                 <div class="item__head">
                                     <div class="item__icon"><img src="icons/experience/courses.svg" alt="courses">
@@ -183,7 +186,7 @@
                     <h3 class="title title_fz20 education__col-title">Опыт работы</h3> 
                     <ul>
                         <li>
-                                        <!-- col-3 item-3 -->
+                                       
                             <div class="item">
                                 <div class="item__head">
                                     <div class="item__icon"><img src="icons/experience/developer.svg" alt="developer">
@@ -196,7 +199,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
                                 </div>
                             </div>
-                                         <!-- col-4 item-4 -->
+                                       
                                 <div class="item">
                                 <div class="item__head">
                                     <div class="item__icon"><img src="icons/experience/designer.svg" alt="designer">
@@ -214,9 +217,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="skills" id="skills">
+    <!-- <section class="skills" id="skills">
         <div class="container">
             <div class="title title_fz16">Навыки</div>
             <h2 class="title title_fz36">Что я использую в работе</h2>
@@ -287,17 +290,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="portfolio" id="portfolio">
+   <!--  <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="title title_fz16">Портфолио</div>
             <h2 class="title title_fz36">Мои работы</h2>
             <div class="portfolio__divider"></div>
             <div class="portfolio__wrapper">
-                <a href="#" class="portfolio__item"><img src="img/works/uber.jpg" alt="uber">
+                <a href="/uber" target="_blank" class="portfolio__item"><img src="img/works/uber.jpg" alt="uber">
                 </a>
-                <a href="https://samgoldev.ru" target="_blank" class="portfolio__item"><img src="img/works/pulse.jpg" alt="pulse">
+                <a href="/Pulse" target="_blank" class="portfolio__item"><img src="img/works/pulse.jpg" alt="pulse">
                 </a>
                 <a href="#" class="portfolio__item"><img src="img/works/bread.jpg" alt="bread">
                 </a>
@@ -310,6 +313,58 @@
             </div>
         </div>
     </section>
+ -->
+    <!-- <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/main_photo.jpg" alt="photo">
+                </div>
+                <div class="contacts__descr">
+                    <div class="title title_fz16">Контакты</div>
+                    <h2 class="title title_fz36">Свяжитесь со мной</h2>
+                    <div class="contacts__divider"></div>
+
+                    <div class="title title_fz14">
+                        Любым удобным для вас способом:
+                    </div>
+                    <div class="contacts__social">
+                        <a target="_blank" href="https://github.com/SamGolDev" class="contacts__link"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://instagram.com/fesachedidit" class="contacts__link"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://t.me/SamFdd" class="contacts__link"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <div class="title title_fz14">
+                        Или оставьте ваши данные и я сам вам напишу:
+                    </div>
+                    <form class="contacts__form" action="#">
+                                
+                        <div class="contacts__input">
+                            <input class="inputs" name="name"  type="text">
+                            <label for="name">Ваше имя</label>
+                        </div>
+                                   
+                        <div class="contacts__input">
+                            <input class="inputs inputs-email" name="email"  type="email">
+                            <label for="email">Ваша почта</label>
+                        </div>
+                                    
+                        <div class="contacts__textarea">
+                            <textarea name="text" maxlength="140"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div>
+                                   
+                        <div class="contacts__triggers">
+                            <button class="btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input type="checkbox" required>
+                                <span>Я согласен(а) с <a href="/policy.html" target="_blank">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <script src="https://kit.fontawesome.com/b94dbcebae.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
